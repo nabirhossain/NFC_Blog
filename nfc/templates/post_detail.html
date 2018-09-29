@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ post1.post_title }}
+{% endblock %}
+{% block stylesheet %}
+
+{% endblock %}
+
+{% block content %}
+	{% if post1.id > first.id %}
+		<a href="{% url 'nfc:post_detail' id=post1.id|add:'-1' %}" class="fh5co-post-prev">
+			<span class="glyphicon glyphicon-chevron-right"> Prev</span>
+		</a>
+	{% endif %}
+	{% if post1.id < last.id %}
+		<a href="{% url 'nfc:post_detail' id=post1.id|add:'1' %}" class="fh5co-post-next">
+			<span class="glyphicon glyphicon-chevron-right">Next</span>
+		</a>
+	{% endif %}
+
+
+<div class="container">
+      <div class="row"  style="margin-top:80px;">
+        <div class="col-lg-8">
+          <h1 class="mt-4">{{ post1.post_title }}</h1>
+          <p class="lead">
+            by
+            <a href="{% url 'nfc:author' name=post1.post_author %}">{{ post1.post_author.auth_name }}</a>
+          </p>
+          <hr>
+          <p>{{ post1.posted_on }}</p>
+          <hr>
+          <img class="img-fluid rounded" src="{{ post1.post_image.url }}" alt="" style="width=auto; height=300px;">
+          <hr>
+          <!-- Post Content -->
+          <p class="lead" style="text-align: justify;">
+			  {{ post1.post_body|safe }}
+		  </p>
+          <hr>
+
+          <!-- Comments Form -->
+          <div class="card my-4">
+            <h5 class="card-header">Leave a Comment:</h5>
+            <div class="card-body">
+              <div class="fb-comments" data-href="https://www.facebook.com/docs/plugin" data-numposts="5"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+                <h3> Article Author </h3>
+				<div class='card card-profile text-center my-4'>
+                  <img alt='' class='card-img-top' src='https://unsplash.it/340/160?image=354'>
+                  <div class='card-block'>
+                    <img alt='' class='card-img-profile' src='{{ post1.post_author.auth_image.url }}'>
+                    <h4 class='card-title'>
+                      {{ post1.post_author.auth_name }}
+                      <small>{{ post1.post_author.auth_details }}</small>
+                    </h4>
+                    <div class='card-links'>
+                      <a class='fa fa-dribbble' href='#'></a>
+                      <a class='fa fa-twitter' href='#'></a>
+                      <a class='fa fa-facebook' href='#'></a>
+                    </div>
+                  </div>
+                </div>
+
+          <!-- Side Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Related Article</h5>
+            <div class="card-body">
+              <ul class="list-unstyled mb-0">
+                 {% for r in related %}
+                <li>
+                   <a href="{% url 'nfc:post_detail' id=r.id %}"><h4>{{ r.post_title }}</h4></a> <hr>
+                </li>
+                 {% endfor %}
+              </ul>
+            </div>
+          </div>
+           <!-- Categories Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Categories</h5>
+            <div class="card-body">
+                  <ul class="list-unstyled mb-0">
+                    {% for c in cat %}
+                    <li>
+                      <a href="{% url 'nfc:category' name=c.name %}"> {{ c.name }}</a> <hr>
+                    </li>
+                    {% endfor %}
+                  </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} {{ topic.name }} {% endblock %}
+{% block content %}
+
+<div class="container">
+      <div class="row" style="margin-top: 80px;">
+          <h3 class="container">All {{ topic.name }} Posts are here</h3>
+        <div class="col-md-8">
+            {% for p in post1 %}
+          <div class="card mb-4">
+            <img class="card-img-top" src="{{ p.post_image.url }}" alt="Card image cap" height="300px" width="300px">
+            <div class="card-body">
+              <h2 class="card-title"><a href="{% url 'nfc:post_detail' id=p.id %}">{{ p.post_title }}</a></h2>
+               <a href="{% url 'nfc:category' name=p.post_category.name %}">category: {{ p.post_category.name }}</a>
+              <p class="card-text">{{ p.post_body|truncatewords:32|safe }}</p>
+              <a href="{% url 'nfc:post_detail' id=p.id %}" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer text-muted"> Posted on:
+                {{ p.posted_on }}
+                ||  Posted By:
+              <a href="{% url 'nfc:author' name=p.post_author %}">{{ p.post_author.auth_name }}</a>
+            </div>
+          </div>
+            {% endfor %}
+          <!-- Pagination -->
+        </div>
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+          <!-- Side Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Most recent Posts</h5>
+              <div class="card-body">
+                <ul class="list-unstyled mb-0">
+					  {% for r in recent %}
+                  <li>
+                      <a href="{% url 'nfc:post_detail' id=r.id %}">{{ r.post_title }}</a> <hr>
+                  </li>
+					  {% endfor %}
+                </ul>
+            </div>
+          </div>
+            <div class="card my-4">
+            <h5 class="card-header">Categories</h5>
+            <div class="card-body">
+                  <ul class="list-unstyled mb-0">
+                    {% for c in cat %}
+                    <li>
+                      <a href="{% url 'nfc:category' name=c.name %}"> {{ c.name }}</a> <hr>
+                    </li>
+                    {% endfor %}
+                  </ul>
+            </div>
+          </div>
+        </div>
+
+{% include "pagination.html" %}
+      </div>
+      <!-- /.row -->
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+    <div class="allpost">
+    {% for p in post1 %}
+        <article class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-xxs-12 animate-box">
+            <figure>
+                <a href="{% url 'nfc:post_detail' id=p.id %}">
+                    <img src="{{ p.post_image.url }}" alt="Image" class="img-responsive" >
+                </a>
+            </figure>
+            <span class="fh5co-meta"><a href="{% url 'nfc:category' name=p.post_category.name %}">category: {{ p.post_category.name }}</a></span>
+            <h2 class="fh5co-article-title"><a href="{% url 'nfc:post_detail' id=p.id %}">{{ p.post_title }}</a></h2>
+            <span class="fh5co-meta fh5co-date">{{ p.posted_on }}</span>
+        </article>
+    {% endfor %}
+    <div class="clear-fix"></div>
+    </div>
+    -->
+<!-- Pagination start -->
+<!-- pagination close-->
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}

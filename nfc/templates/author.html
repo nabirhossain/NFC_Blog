@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% block title %}
+    Author || {{ auth.auth_name }}
+{% endblock %}
+{% block stylesheet %}
+
+{% endblock %}
+
+{% block content %}
+<div class="container">
+      <div class="row" style="margin-top: 80px;">
+          <h1 class="container">All Articles of {{ auth.auth_name }}  </h1>
+        <div class="col-md-8">
+            {% for p in post1 %}
+          <div class="card mb-4">
+            <a href="{% url 'nfc:post_detail' id=p.id %}">
+            <img class="card-img-top" src="{{ p.post_image.url }}" alt="Card image cap" height="300px" width="300px">
+            </a>
+            <div class="card-body">
+              <h2 class="card-title"><a href="{% url 'nfc:post_detail' id=p.id %}">{{ p.post_title }}</a></h2>
+               <a href="{% url 'nfc:category' name=p.post_category.name %}">category: {{ p.post_category.name }}</a>
+              <p class="card-text">{{ p.post_body|truncatewords:25|safe }}</p>
+              <a href="{% url 'nfc:post_detail' id=p.id %}" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer text-muted"> Posted on:
+                {{ p.posted_on }}
+                ||  Posted By:
+              <a href="{% url 'nfc:author' name=p.post_author %}">{{ p.post_author.auth_name }}</a>
+            </div>
+          </div>
+            {% endfor %}
+          <!-- Pagination -->
+        </div>
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+          <h3> Author Profile</h3>
+				<div class='card card-profile text-center my-4'>
+                  <img alt='' class='card-img-top' src='https://unsplash.it/340/160?image=354'>
+                  <div class='card-block'>
+                    <img alt='' class='card-img-profile' src='{{ auth.auth_image.url }}'>
+                    <h4 class='card-title'>
+                      {{ auth.auth_name }}
+                      <small>{{ auth.auth_details }}</small>
+                    </h4>
+                    <div class='card-links'>
+                      <a class='fa fa-dribbble' href='#'></a>
+                      <a class='fa fa-twitter' href='#'></a>
+                      <a class='fa fa-facebook' href='#'></a>
+                    </div>
+                  </div>
+                </div>
+
+          <!-- Side Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Most recent Posts</h5>
+              <div class="card-body">
+                <ul class="list-unstyled mb-0">
+					  {% for r in recent %}
+                  <li>
+                      <a href="{% url 'nfc:post_detail' id=r.id %}">{{ r.post_title }}</a> <hr>
+                  </li>
+					  {% endfor %}
+                </ul>
+            </div>
+          </div>
+           <!-- Categories Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Categories</h5>
+            <div class="card-body">
+                  <ul class="list-unstyled mb-0">
+                    {% for c in cat %}
+                    <li>
+                      <a href="{% url 'nfc:category' name=c.name %}"> {{ c.name }}</a> <hr>
+                    </li>
+                    {% endfor %}
+                  </ul>
+            </div>
+          </div>
+        </div>
+{% include "pagination.html" %}
+      </div>
+      <!-- /.row -->
+
+    </div>
+
+{% endblock %}
+{% block script %}
+
+{% endblock %}
