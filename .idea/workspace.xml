@@ -2,97 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aabad4b-514c-4418-ba3f-0bb8bf43b3df" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/contact/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact/templates/email.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact/templates/success.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/assets/mauGallery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/assets/scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/css/lightbox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/css/lightbox.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/css/round-about.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/arif.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/ekram.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/jahan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/jahangir.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/preon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/rahim.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/rowsan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/js/lightbox-plus-jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/js/lightbox-plus-jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/js/lightbox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/js/lightbox.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/templates/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/mauGallery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/lightbox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/lightbox.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/Computer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/HSC1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/IfFormula.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/PT.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/PT1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/PT2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/PT3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/PT4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/PT5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/PT6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/PT7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/PT8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/atten_reg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/count_num_date.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/diff_depart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/diff_rig.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/em_y_ex.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/excel.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/excelpivot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/find_emp_in_year.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/img2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/img3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/next.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/part-com.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/payslip1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/practical_accounting.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/prev.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/profile_img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/salary_slip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/ssc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/vlookup.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/lightbox-plus-jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/lightbox-plus-jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/lightbox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/lightbox.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/static/css/animate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/static/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/static/css/flexslider.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/static/css/icomoon.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/static/img/log-in.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/static/img/log-out.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/static/img/user-circle-solid.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/static/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/static/js/jquery.easing.1.3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/static/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/static/js/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/static/js/jquery.waypoints.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/static/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/static/js/modernizr-2.6.2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/static/js/respond.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/author.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/author.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/mission.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/mission.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/portfolio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/post_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/round-about.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/arif.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/ekram.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/jahan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/jahangir.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/nfc_logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/preon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/rahim.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/rowsan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nfc/static/css/lightbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nfc/static/css/lightbox.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nfc/static/js/lightbox-plus-jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nfc/static/js/lightbox-plus-jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nfc/static/js/lightbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nfc/static/js/lightbox.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nfc_blog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nfc_blog/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc_blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/nfc_blog/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -103,11 +29,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nfc/templates/about.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nfc_blog/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="387">
+              <caret line="146" column="78" selection-start-line="146" selection-start-column="78" selection-end-line="146" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -195,7 +139,7 @@
             <path>
               <item name="nfc_blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="nfc_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="nfc_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -210,11 +154,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/img" />
+      <recent name="$PROJECT_DIR$/static/css" />
+      <recent name="$PROJECT_DIR$/static/js" />
       <recent name="$PROJECT_DIR$/nfc/static/img" />
       <recent name="$PROJECT_DIR$/nfc/static/js" />
-      <recent name="$PROJECT_DIR$/nfc/static/css" />
-      <recent name="$PROJECT_DIR$/nfc/templates" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/nfc/static/img" />
@@ -292,20 +236,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nfc/templates/createAuthor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nfc/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nfc/templates/AllTopic.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -478,6 +408,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="54" column="125" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="125" />
+          <folding>
+            <element signature="e#1808#1844#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -514,22 +447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nfc/templates/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="116" column="15" lean-forward="true" selection-start-line="116" selection-start-column="15" selection-end-line="116" selection-end-column="15" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nfc/templates/portfolio.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -553,10 +470,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/bootstrap.bundle.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/round-about.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfc/templates/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/nfc_blog/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="387">
+          <caret line="146" column="78" selection-start-line="146" selection-start-column="78" selection-end-line="146" selection-end-column="78" />
         </state>
       </provider>
     </entry>
