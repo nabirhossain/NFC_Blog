@@ -18,10 +18,8 @@ urlpatterns = [
     path('topics',views.ShowTopic, name='category'),
     path('create/topic',views.AddCategory, name='createTopic'),
     path('pdf/<int:id>',views.pdf.as_view(), name='pdf'),
-    path('mission',views.mission, name='mission'),
-    path('portfolio',views.mission, name='portfolio'),
-    path('contact',views.mission, name='contact'),
-
+    path('about/',views.About, name='about'),
+    path('activity/',views.PortFolio, name='activity'),
 
     #account confirmation url
     path('activate/<uid>/<token>',views.activate, name='activate'),

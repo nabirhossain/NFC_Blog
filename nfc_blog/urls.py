@@ -23,6 +23,7 @@ app_name='nfc'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('nfc.urls', namespace="nfc")),
+    path('',include('contact.urls', namespace="contact")),
     path('ckeditor/',include('ckeditor_uploader.urls')),
 ]
 if settings.DEBUG:

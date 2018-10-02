@@ -13,7 +13,8 @@ from .require import renderPdf
 from django.contrib.sites.shortcuts import get_current_site
 from django.template.loader import render_to_string
 from django.conf import settings
-from django.core.mail import send_mail
+from django.core.mail import send_mail, BadHeaderError
+
 # close registration import
 # token import
 from .token import activation_token
@@ -250,11 +251,11 @@ class pdf(View):
         post_pdf = renderPdf('pdf.html', context)
         return HttpResponse(post_pdf, content_type='application/pdf')
 
-def mission(request):
-    return render(request, 'mission.html')
+def About(request):
+    return render(request, 'about.html')
 
-def portfolio(request):
+
+def PortFolio(request):
     return render(request, 'portfolio.html')
 
-def contact(request):
-    return render(request, 'contact.html')
+

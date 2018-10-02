@@ -1,4 +1,6 @@
 {% extends 'base.html' %}
+{% load static %}
+
 {% block title %}
     Author || {{ auth.auth_name }}
 {% endblock %}
@@ -35,7 +37,7 @@
         <div class="col-md-4">
           <h3> Author Profile</h3>
 				<div class='card card-profile text-center my-4'>
-                  <img alt='' class='card-img-top' src='https://unsplash.it/340/160?image=354'>
+                  <img alt='' class='card-img-top' src="{% static 'img/nfc_logo.jpg' %}" style="width: 340px; height: 160px;">
                   <div class='card-block'>
                     <img alt='' class='card-img-profile' src='{{ auth.auth_image.url }}'>
                     <h4 class='card-title'>
