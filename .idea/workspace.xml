@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aabad4b-514c-4418-ba3f-0bb8bf43b3df" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/nfc_eid1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/nfc_eid2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/nfc_eid3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/nfc_eid4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/nfc_eid5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/nfc_eid6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/nfc_eid7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/nfc_eid8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/nfc_eid9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/createAuthor.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/createAuthor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/portfolio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/post_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nfc_blog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nfc_blog/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,8 +16,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nfc_blog/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            <state relative-caret-position="76">
+              <caret line="137" column="1" selection-start-line="137" selection-start-column="1" selection-end-line="137" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -97,7 +84,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="699" />
     <option name="y" value="122" />
     <option name="width" value="657" />
@@ -188,7 +175,7 @@
     <frame x="67" y="28" width="1299" height="706" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24941176" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24941176" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32922536" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
@@ -448,8 +435,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nfc_blog/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        <state relative-caret-position="76">
+          <caret line="137" column="1" selection-start-line="137" selection-start-column="1" selection-end-line="137" selection-end-column="1" />
         </state>
       </provider>
     </entry>
