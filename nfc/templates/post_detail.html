@@ -8,16 +8,7 @@
 {% endblock %}
 
 {% block content %}
-	{% if post1.id > first.id %}
-		<a href="{% url 'nfc:post_detail' id=post1.id|add:'-1' %}" class="fh5co-post-prev">
-			<span class="glyphicon glyphicon-chevron-right"> Prev</span>
-		</a>
-	{% endif %}
-	{% if post1.id < last.id %}
-		<a href="{% url 'nfc:post_detail' id=post1.id|add:'1' %}" class="fh5co-post-next">
-			<span class="glyphicon glyphicon-chevron-right">Next</span>
-		</a>
-	{% endif %}
+
 
 
 <div class="container">
@@ -31,6 +22,17 @@
           <hr>
           <p>{{ post1.posted_on }}</p>
           <hr>
+          {% if post1.id > first.id %}
+              <a href="{% url 'nfc:post_detail' id=post1.id|add:'-1' %}" class="fh5co-post-prev">
+                   Prev
+              </a>
+          {% endif %}
+          {% if post1.id < last.id %}
+              <a href="{% url 'nfc:post_detail' id=post1.id|add:'1' %}" class="fh5co-post-next">
+                 Next
+              </a>
+          {% endif %}
+          <hr>
           <img class="img-fluid rounded" src="{{ post1.post_image.url }}" alt="" style="width=auto; height=300px;">
           <hr>
           <!-- Post Content -->
@@ -38,7 +40,6 @@
 			  {{ post1.post_body|safe }}
 		  </p>
           <hr>
-
           <!-- Comments Form -->
           <div class="card my-4">
             <h5 class="card-header">Leave a Comment:</h5>
