@@ -52,7 +52,7 @@
         <div class="col-md-4">
                 <h3> Article Author </h3>
 				<div class='card card-profile text-center my-4'>
-                  <img alt='' class='card-img-top' src="{% static 'img/nfc_logo.jpg' %}" style="width: 340px; height: 160px;">
+                  <img alt='' class='card-img-top' src="{% static 'img/nfc_logo.jpg' %}" style="width: 340px; height: 160px; border: 1px solid;">
                   <div class='card-block'>
                     <img alt='' class='card-img-profile' src='{{ post1.post_author.auth_image.url }}'>
                     <h4 class='card-title'>
@@ -93,6 +93,16 @@
                   </ul>
             </div>
           </div>
+          <!-- offline Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Offline/Download this article</h5>
+            <div class="card-body">
+                <a href="{% url 'nfc:pdf' id=post1.id %}">
+                  <img src="{% static 'img/file.svg' %}" alt="Logo" width="60pt" height="60pt">
+                </a>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>

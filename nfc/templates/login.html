@@ -1,20 +1,226 @@
-{% extends 'base.html' %}
-{% load crispy_forms_tags %}
-{% block title %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login here</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
 
-{% endblock %}
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/animate/animate.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/css-hamburgers/hamburgers.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/animsition/css/animsition.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/daterangepicker/daterangepicker.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+<!--===============================================================================================-->
+    <style type="text/css">
+    .social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ .social {
+     -webkit-transform: scale(0.8);
+     /* Browser Variations: */
 
-{% block stylesheet %}
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+ }
 
-{% endblock %}
+/*
+    Multicoloured Hover Variations
+*/
+#social-fb {
+     text-align: center;
+     float: center;
+ }
+ #social-fb:hover {
+     color: #3B5998;
+ }
+ #social-in:hover {
+     color: #0077b5;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+ }
+ #social-gp:hover {
+     color: #d34836;
+ }
+ #social-em:hover {
+     color: #f39c12;
+ }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+       <a class="navbar-brand" href="{% url 'nfc:index' %}">
+           <img src="{% static 'img/nfc_logo.jpg' %}" alt="Logo" style="width:45px;">
+       </a>
+       <p class="text-light"> আর্ত মানবতার সেবায় আমরা</p>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'nfc:index' %}">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'nfc:about' %}">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'nfc:activity' %}">Activities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact:contact' %}">Contact</a>
+            </li>
+            {% if request.user.is_authenticated %}
+			<li class="nav-item">
+                <a class="nav-link" href="{% url 'nfc:profile' %}">
+                    <img src="{% static 'img/user.svg' %}" alt="Logo" width="34" height="30">
+                </a>
+            </li>
+			<li class="nav-item">
+                <a class="nav-link" href="{% url 'nfc:logout' %}">
+                    <img src="{% static 'img/exit.svg' %}" alt="Logo" width="34" height="30">
+                </a>
+            </li>
+			    {% else %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'nfc:login' %}">
+                    <img src="{% static 'img/login.svg' %}" alt="Logo" width="34" height="30">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'nfc:register' %}">
+                    <img src="{% static 'img/user(3).svg' %}" alt="Logo" width="34" height="30">
+                </a>
+            </li>
+			{% endif %}
+          </ul>
+        </div>
+    </nav>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-t-85 p-b-20">
+				<form class="login100-form validate-form" action="" method="POST"> {% csrf_token %}
+					<span class="login100-form-title p-b-70">
+						Welcome to NFC
+					</span>
+					<span class="login100-form-avatar">
+						<img src="{% static 'img/nfc_logo.jpg' %}" alt="AVATAR">
+					</span>
+                    {% if messages %}
+                    <div class="messages">
+                        {% for message in messages %}
+                        <div {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "user">
+						<input class="input100" type="text" name="user">
+						<span class="focus-input100" data-placeholder="Username"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-50" data-validate="pass">
+						<input class="input100" type="password" name="pass">
+						<span class="focus-input100" data-placeholder="Password"></span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" type="submit">
+							Login
+						</button>
+					</div>
+
+					<ul class="login-more p-t-190">
+						<li class="m-b-8">
+							<span class="txt1">
+								Forgot
+							</span>
+
+							<a href="#" class="txt2">
+								Username / Password?
+							</a>
+						</li>
+
+						<li>
+							<span class="txt1">
+								Don’t have an account?
+							</span>
+
+							<a href="{% url 'nfc:register' %}" class="txt2">
+								Sign up
+							</a>
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</div>
+<!-- Footer -->
+    <footer class="py-3 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Narayangonj Friends Club || All rights reserved 2018 || Designed by  <a href="https://nobinprofile.herokuapp.com/" class="text-primary">Talukder Nobin</a> </p>
+        <p class="m-0 text-center text-info">
+          <a href="https://www.facebook.com/groups/nfc.2011/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+          <a href="https://www.linkedin.com/in/nabir-hossain-a72249106/"><i id="social-in" class="fa fa-linkedin-square fa-3x social"></i></a>
+          <a href="https://twitter.com/MdNabirHossain3"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+          <a href="https://plus.google.com/u/0/116561509278696653736"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+          <a href="mailto:nabirhossain13@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+        </p>
+      </div>
+    </footer>
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/animsition/js/animsition.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/bootstrap/js/popper.js' %}"></script>
+	<script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/select2/select2.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/daterangepicker/moment.min.js' %}"></script>
+	<script src="{% static 'vendor/daterangepicker/daterangepicker.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/countdowntime/countdowntime.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
 
 
-{% block profile %}
-
-{% endblock %}
 
 
-{% block content %}
+
+
+
+
+
+
+<!--
 
 <div class="container" style="margin-top: 80px;">
     <div class="row">
@@ -59,9 +265,5 @@
         </div>
     </div>
 </div>
-{% endblock %}
 
-
-{% block script %}
-
-{% endblock %}
+-->

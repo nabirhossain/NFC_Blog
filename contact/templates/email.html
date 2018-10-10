@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
 
+{% block title %}
+Contact us
+{% endblock %}
+
+
 {% block content %}
 <div class="row" style="margin-top: 80px;">
     <div class="col-sm-12">
@@ -38,6 +43,10 @@
                     <p>contact: nabirhossain13@gmail.com</p>
                 </li>
             </ul>
+            <div class="map-responsive">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d58469.378452778365!2d90.46643827885404!3d23.66393378130325!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1533618815803" width="auto" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
         </div>
     </div>
+
 {% endblock %}
