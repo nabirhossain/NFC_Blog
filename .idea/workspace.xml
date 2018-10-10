@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9aabad4b-514c-4418-ba3f-0bb8bf43b3df" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc_blog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nfc_blog/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/nfc_logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/nfc_logo.jpg" afterDir="false" />
-    </list>
+    <list default="true" id="9aabad4b-514c-4418-ba3f-0bb8bf43b3df" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,16 +101,6 @@
               <item name="nfc_blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="nfc_blog" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="nfc_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nfc_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="nfc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nfc_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nfc_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="nfc_blog" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -211,7 +197,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nfc/static/css/animate.css" />
     <entry file="file://$PROJECT_DIR$/nfc/static/css/hamburgers.min.css" />
     <entry file="file://$PROJECT_DIR$/nfc/static/css/animsition.min.css" />
     <entry file="file://$PROJECT_DIR$/nfc/static/css/select2.min.css" />
@@ -493,6 +478,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/arif.75a4a842bd7c.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/nfc_blog/settings.py">
       <provider selected="true" editor-type-id="text-editor">
