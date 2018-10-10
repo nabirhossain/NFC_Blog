@@ -2,115 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aabad4b-514c-4418-ba3f-0bb8bf43b3df" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/nfc/static/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/css/util.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/HELP-US-OUT.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/less/animated.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/less/core.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/less/icons.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/less/larger.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/less/list.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/less/path.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/less/variables.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/exit.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/file.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/nfc_7th_birthDay.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/nfc_birth1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/nfc_birth2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/nfc_birth3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/nfc_birth4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/nfc_birth5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/nfc_birth6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/nfc_gift1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/nfc_gift2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/nfc_gift3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/nfc_gift4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/nfc_gift5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/nfc_gift6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/nfc_gift7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/nfc_gift8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/user(3).svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/animate/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/animsition/css/animsition.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/animsition/css/animsition.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/animsition/js/animsition.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/animsition/js/animsition.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/bootstrap/js/popper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/bootstrap/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/bootstrap/js/tooltip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/countdowntime/countdowntime.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/css-hamburgers/hamburgers.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/css-hamburgers/hamburgers.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/daterangepicker/daterangepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/daterangepicker/daterangepicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/daterangepicker/moment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/daterangepicker/moment.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/jquery/jquery-3.2.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/perfect-scrollbar/perfect-scrollbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/perfect-scrollbar/perfect-scrollbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/select2/select2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/select2/select2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/select2/select2.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/vendor/select2/select2.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact/templates/email.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact/templates/email.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/static/img/nfc_logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/static/img/nfc_logo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/AllTopic.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/AllTopic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/CreateTopics.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/CreateTopics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/confirmation_email.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/confirmation_email.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/portfolio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/post_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nfc_blog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nfc_blog/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/nfc_logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/nfc_logo.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -124,8 +18,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nfc_blog/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1559">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="76">
+              <caret line="137" selection-start-line="137" selection-end-line="137" />
             </state>
           </provider>
         </entry>
@@ -283,7 +177,7 @@
     <frame x="67" y="28" width="1299" height="706" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24941176" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24941176" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32922536" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -602,8 +496,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nfc_blog/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1559">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="76">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
         </state>
       </provider>
     </entry>
