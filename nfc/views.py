@@ -32,7 +32,7 @@ def index(request):
             Q(post_title__icontains = search)|
             Q(post_body__icontains = search)
         )
-    paginator = Paginator(post1, 6)
+    paginator = Paginator(post1, 2)
     page = request.GET.get('page')
     try:
         items = paginator.page(page)
@@ -42,8 +42,8 @@ def index(request):
         items = paginator.page(paginator.num_pages)
     index = items.number - 1
     max_index = len(paginator.page_range)
-    start_index = index - 2 if index >= 2 else 0
-    end_index = index + 2 if index <= max_index else max_index
+    start_index = index - 4 if index >= 4 else 0
+    end_index = index + 4 if index <= max_index else max_index
     page_range = paginator.page_range[start_index:end_index]
     context = {
         'post1':post1,
@@ -61,14 +61,26 @@ def getAuthor(request, name):
     post1 = post.objects.filter(post_author=auth.id)
     cat = category.objects.all()
     recent = post.objects.filter().order_by('-posted_on')[0:6]
-    paginator = Paginator(post1, 4)
+    paginator = Paginator(post1, 2)
     page = request.GET.get('page')
-    TotalPost = paginator.get_page(page)
+    try:
+        items = paginator.page(page)
+    except PageNotAnInteger:
+        items = paginator.page(1)
+    except EmptyPage:
+        items = paginator.page(paginator.num_pages)
+    index = items.number - 1
+    max_index = len(paginator.page_range)
+    start_index = index - 4 if index >= 4 else 0
+    end_index = index + 4 if index <= max_index else max_index
+    page_range = paginator.page_range[start_index:end_index]
     context = {
         'auth':auth,
         'cat':cat,
         'recent':recent,
-        'post1':TotalPost,
+        'post1':post1,
+        'items': items,
+        'page_range': page_range
     }
     return render(request,'author.html', context)
 
@@ -92,7 +104,7 @@ def PostTopic(request, name):
     post1 = post.objects.filter(post_category=topic.id)
     cat = category.objects.all()
     recent = post.objects.filter().order_by('-posted_on')[0:6]
-    paginator = Paginator(post1, 4)
+    paginator = Paginator(post1, 2)
     page = request.GET.get('page')
     try:
         items = paginator.page(page)
@@ -102,8 +114,8 @@ def PostTopic(request, name):
         items = paginator.page(paginator.num_pages)
     index = items.number - 1
     max_index = len(paginator.page_range)
-    start_index = index - 2 if index >= 2 else 0
-    end_index = index + 2 if index <= max_index else max_index
+    start_index = index - 4 if index >= 4 else 0
+    end_index = index + 4 if index <= max_index else max_index
     page_range = paginator.page_range[start_index:end_index]
     return render(request,'category.html', {"post1":post1, "topic":topic, 'cat':cat ,'recent': recent,'items': items, 'page_range': page_range })
 

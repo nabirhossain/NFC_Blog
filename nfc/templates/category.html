@@ -7,7 +7,7 @@
       <div class="row" style="margin-top: 80px;">
           <h3 class="container">All {{ topic.name }} Posts are here</h3>
         <div class="col-md-8">
-            {% for p in post1 %}
+            {% for p in items %}
           <div class="card mb-4">
             <img class="card-img-top" src="{{ p.post_image.url }}" alt="Card image cap" height="300px" width="300px">
             <div class="card-body">

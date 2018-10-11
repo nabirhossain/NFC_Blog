@@ -13,7 +13,7 @@
       <div class="row" style="margin-top: 80px;">
           <h1 class="container">All Articles of {{ auth.auth_name }}  </h1>
         <div class="col-md-8">
-            {% for p in post1 %}
+            {% for p in items %}
           <div class="card mb-4">
             <a href="{% url 'nfc:post_detail' id=p.id %}">
             <img class="card-img-top" src="{{ p.post_image.url }}" alt="Card image cap" height="300px" width="300px">
@@ -37,7 +37,7 @@
         <div class="col-md-4">
           <h3> Author Profile</h3>
 				<div class='card card-profile text-center my-4'>
-                  <img alt='' class='card-img-top' src="{% static 'img/nfc_logo.jpg' %}" style="width: 340px; height: 160px;">
+                  <img alt='' class='card-img-top' src="{% static 'img/nfc_logo.jpg' %}" style="width: 340px; height: 160px; border: 1px solid;">
                   <div class='card-block'>
                     <img alt='' class='card-img-profile' src='{{ auth.auth_image.url }}'>
                     <h4 class='card-title'>

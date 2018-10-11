@@ -1,8 +1,8 @@
-
+<div class="pagination" style="margin-left: -85px;">
     {% if items.has_other_pages %}
-        <div class="col-6 offset-3 text-center Pagination-set">
-          <nav aria-label="">
-            <ul class="pagination pagination-sm">
+        <div class="col-sm-6 offset-3 text-center Pagination-set">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
             {% if items.has_previous %}
             <li class="page-item">
               <a class="page-link" href="?page={{ items.previous_page_number }}">Prev</a>
@@ -28,4 +28,6 @@
             {% endif %}
           </ul>
           </nav>
+        </div>
     {% endif %}
+</div>
