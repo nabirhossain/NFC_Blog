@@ -21,17 +21,7 @@
           </p>
           <hr>
           <p>{{ post1.posted_on }}</p>
-          <hr>
-          {% if post1.id > first.id %}
-              <a href="{% url 'nfc:post_detail' id=post1.id|add:'-1' %}" class="fh5co-post-prev">
-                   Prev
-              </a>
-          {% endif %}
-          {% if post1.id < last.id %}
-              <a href="{% url 'nfc:post_detail' id=post1.id|add:'1' %}" class="fh5co-post-next">
-                 Next
-              </a>
-          {% endif %}
+
           <hr>
           <img class="img-fluid rounded" src="{{ post1.post_image.url }}" alt="" style="width=auto; height=300px;">
           <hr>
@@ -44,7 +34,7 @@
           <div class="card my-4">
             <h5 class="card-header">Leave a Comment:</h5>
             <div class="card-body">
-              <div class="fb-comments" data-href="https://www.facebook.com/docs/plugin" data-numposts="5"></div>
+              <div class="fb-comments" data-href="{{ request.build_absolute_url }}" data-numposts="5"></div>
             </div>
           </div>
         </div>
@@ -108,3 +98,16 @@
       </div>
     </div>
 {% endblock %}
+
+<!--
+{% if post1.id > first.id %}
+          <a href="{% url 'nfc:post_detail' id=post1.id|add:'-1' %}" class="fh5co-post-prev">
+               <img src="{% static 'img/arrow_left.svg' %}" alt="Logo" width="34" height="30">
+          </a>
+          {% endif %}
+          {% if post1.id < last.id %}
+          <a href="{% url 'nfc:post_detail' id=post1.id|add:'1' %}" class="fh5co-post-next">
+             <img src="{% static 'img/arrow_right.svg' %}" alt="Logo" width="34" height="30">
+          </a>
+          {% endif %}
+-->

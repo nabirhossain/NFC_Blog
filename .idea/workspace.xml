@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aabad4b-514c-4418-ba3f-0bb8bf43b3df" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/alfie.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/babu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/ifty.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/mintu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/rofiq.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfc/static/img/shithi.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/static/img/ekram.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/static/img/ekram.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/author.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/author.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/pagination.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/pagination.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nfc/templates/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/post_detail.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,7 +73,6 @@
         <option value="$PROJECT_DIR$/nfc/templates/AllTopic.html" />
         <option value="$PROJECT_DIR$/nfc/templates/CreateTopics.html" />
         <option value="$PROJECT_DIR$/nfc/templates/createAuthor.html" />
-        <option value="$PROJECT_DIR$/nfc/templates/post_detail.html" />
         <option value="$PROJECT_DIR$/nfc/templates/portfolio.html" />
         <option value="$PROJECT_DIR$/nfc/templates/about.html" />
         <option value="$PROJECT_DIR$/nfc/templates/pagination.html" />
@@ -96,6 +81,7 @@
         <option value="$PROJECT_DIR$/nfc/templates/author.html" />
         <option value="$PROJECT_DIR$/nfc/templates/index.html" />
         <option value="$PROJECT_DIR$/nfc/templates/profile.html" />
+        <option value="$PROJECT_DIR$/nfc/templates/post_detail.html" />
         <option value="$PROJECT_DIR$/nfc_blog/settings.py" />
       </list>
     </option>
@@ -118,11 +104,6 @@
             <path>
               <item name="nfc_blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="nfc_blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nfc_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nfc_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="nfc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nfc_blog" type="b2602c69:ProjectViewProjectNode" />
@@ -403,17 +384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nfc/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="200" lean-forward="true" selection-start-line="200" selection-end-line="200" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
-            <element signature="n#style#1;n#head#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nfc/templates/pagination.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -445,16 +415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nfc/templates/post_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="55" column="143" selection-start-line="55" selection-start-column="125" selection-end-line="55" selection-end-column="143" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nfc/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="411">
@@ -476,6 +436,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
           <caret line="81" column="19" lean-forward="true" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfc/templates/post_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="36" column="82" selection-start-line="36" selection-start-column="82" selection-end-line="36" selection-end-column="82" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfc/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1016">
+          <caret line="163" column="96" lean-forward="true" selection-start-line="163" selection-start-column="20" selection-end-line="163" selection-end-column="96" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#1;n#head#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
