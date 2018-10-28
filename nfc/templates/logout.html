@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+
+{% endblock %}
+{% block content %}
+	<div class="container">
+        <h3 style="margin-top: 100px;">Your password has been updated successfully.</h3>
+        <h3>Now you can <a href="{% url 'nfc:login' %}">login</a></h3>
+    </div>
+
+{% endblock %}

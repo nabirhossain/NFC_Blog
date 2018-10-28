@@ -5,21 +5,20 @@
 
 <div class="container">
       <div class="row" style="margin-top: 80px;">
-          <h3 class="container">All {{ topic.name }} Posts are here</h3>
+          <h3 class="container">{{ topic.name }}  এর সকল পোষ্ট এখানে</h3>
         <div class="col-md-8">
             {% for p in items %}
           <div class="card mb-4">
-            <img class="card-img-top" src="{{ p.post_image.url }}" alt="Card image cap" height="300px" width="300px">
+              <a href="{% url 'nfc:post_detail' id=p.id %}">
+                <img class="card-img-top" src="{{ p.post_image.url }}" alt="Card image cap" height="300px" width="300px">
+              </a>
             <div class="card-body">
               <h2 class="card-title"><a href="{% url 'nfc:post_detail' id=p.id %}">{{ p.post_title }}</a></h2>
                <a href="{% url 'nfc:category' name=p.post_category.name %}">category: {{ p.post_category.name }}</a>
               <p class="card-text">{{ p.post_body|truncatewords:32|safe }}</p>
               <a href="{% url 'nfc:post_detail' id=p.id %}" class="btn btn-primary">Read More &rarr;</a>
             </div>
-            <div class="card-footer text-muted"> Posted on:
-                {{ p.posted_on }}
-                ||  Posted By:
-              <a href="{% url 'nfc:author' name=p.post_author %}">{{ p.post_author.auth_name }}</a>
+            <div class="card-footer text-muted"> Posted on {{ p.posted_on }} ||  Posted By: <a href="{% url 'nfc:author' name=p.post_author %}">{{ p.post_author.auth_name }}</a>
             </div>
           </div>
             {% endfor %}
@@ -34,7 +33,7 @@
                 <ul class="list-unstyled mb-0">
 					  {% for r in recent %}
                   <li>
-                      <a href="{% url 'nfc:post_detail' id=r.id %}">{{ r.post_title }}</a> <hr>
+                      <a href="{% url 'nfc:post_detail' id=r.id %}">{{ r.post_title }} - views: {{ r.views }} </a> <hr>
                   </li>
 					  {% endfor %}
                 </ul>
@@ -46,7 +45,7 @@
                   <ul class="list-unstyled mb-0">
                     {% for c in cat %}
                     <li>
-                      <a href="{% url 'nfc:category' name=c.name %}"> {{ c.name }}</a> <hr>
+                      <a href="{% url 'nfc:category' name=c.name %}"> {{ c.name }} <span class="badge badge-secondary">{{ count }} posts</span></a><hr>
                     </li>
                     {% endfor %}
                   </ul>

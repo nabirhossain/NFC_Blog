@@ -9,19 +9,27 @@
 
 {% block content %}
 
-
-
 <div class="container">
       <div class="row"  style="margin-top:80px;">
         <div class="col-lg-8">
           <h1 class="mt-4">{{ post1.post_title }}</h1>
+          <hr>
           <p class="lead">
-            by
-            <a href="{% url 'nfc:author' name=post1.post_author %}">{{ post1.post_author.auth_name }}</a>
+            <img src="{% static 'img/user.svg' %}" alt="Logo" width="34" height="30">
+            <a href="{% url 'nfc:author' name=post1.post_author %}">{{ post1.post_author.auth_name }}</a> ||
+            <img src="{% static 'img/calendar.png' %}" alt="Logo" width="34" height="30">{{ post1.posted_on }} || <strong class="text-info">Post views</strong> {{ post1.views }}
           </p>
           <hr>
-          <p>{{ post1.posted_on }}</p>
-
+          <div class="fb-share-button" data-href="{{ request.build_absolute_url }}" data-layout="button" data-size="small" data-mobile-iframe="true" style="float: left; padding: 5px; margin-top: -10px;">
+          <a target="_blank" href="{{ request.build_absolute_url }}" class="fb-xfbml-parse-ignore">Share</a>
+          </div>
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+          <script type="IN/Share" data-url="http://127.0.0.1:8000"></script>
+          <!-- Place this tag in your head or just before your close body tag. -->
+          <script src="https://apis.google.com/js/platform.js" async defer></script>
+          <!-- Place this tag where you want the share button to render. -->
+          <div class="g-plus" data-action="share" data-href="{{ request.build_absolute_url }}"></div>
           <hr>
           <img class="img-fluid rounded" src="{{ post1.post_image.url }}" alt="" style="width=auto; height=300px;">
           <hr>
@@ -30,11 +38,14 @@
 			  {{ post1.post_body|safe }}
 		  </p>
           <hr>
-          <!-- Comments Form -->
+          <!-- Comments Form section -->
           <div class="card my-4">
-            <h5 class="card-header">Leave a Comment:</h5>
+            <h5 class="card-header">Write a Comment before you leave:</h5>
             <div class="card-body">
-              <div class="fb-comments" data-href="{{ request.build_absolute_url }}" data-numposts="5"></div>
+              {% load disqus_tags %}                    <!-- disqus comment system -->
+              {% set_disqus_title post1.post_title %}        <!-- disqus comment system -->
+              {% disqus_show_comments %}                <!-- disqus comment system -->
+              <!-- <div class="fb-comments" data-href="{{ request.build_absolute_url }}" data-numposts="5"></div>  --> <!-- facebook comment system -->
             </div>
           </div>
         </div>
@@ -65,7 +76,7 @@
               <ul class="list-unstyled mb-0">
                  {% for r in related %}
                 <li>
-                   <a href="{% url 'nfc:post_detail' id=r.id %}"><h4>{{ r.post_title }}</h4></a> <hr>
+                   <a href="{% url 'nfc:post_detail' id=r.id %}"><h5>{{ r.post_title }}</h5></a> <hr>
                 </li>
                  {% endfor %}
               </ul>
@@ -86,10 +97,11 @@
           </div>
           <!-- offline Widget -->
           <div class="card my-4">
-            <h5 class="card-header">Offline/Download this article</h5>
+            <h5 class="card-header">Downloadable resources</h5>
             <div class="card-body">
                 <a href="{% url 'nfc:pdf' id=post1.id %}">
-                  <img src="{% static 'img/file.svg' %}" alt="Logo" width="60pt" height="60pt">
+                  <img src="{% static 'img/file.svg' %}" alt="Logo" width="40pt" height="40pt">
+                  PDF of this content
                 </a>
             </div>
           </div>

@@ -43,12 +43,12 @@
 
           <!-- Side Widget -->
           <div class="card my-4">
-            <h5 class="card-header">Most recent Posts</h5>
+            <h5 class="card-header"> সর্বশেষ প্রকাশিত পোষ্ট</h5>
               <div class="card-body">
                 <ul class="list-unstyled mb-0">
 					  {% for r in recent %}
                   <li>
-                      <a href="{% url 'nfc:post_detail' id=r.id %}">{{ r.post_title }}</a> <hr>
+                      <a href="{% url 'nfc:post_detail' id=r.id %}">{{ r.post_title }} <span class="badge badge-pill badge-light">views: {{ r.views }}</span> </a>  <hr>
                   </li>
 					  {% endfor %}
                 </ul>
@@ -62,7 +62,7 @@
                   <ul class="list-unstyled mb-0">
                     {% for c in cat %}
                     <li>
-                      <a href="{% url 'nfc:category' name=c.name %}"> {{ c.name }}</a> <hr>
+                      <a href="{% url 'nfc:category' name=c.name %}"> {{ c.name }} <span class="badge badge-secondary">12 posts</span> </a>  <hr>
                     </li>
                     {% endfor %}
                   </ul>

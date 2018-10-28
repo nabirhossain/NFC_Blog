@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
 {% block title %}
-
+Create post
 {% endblock %}
 
 {% block stylesheet %}
@@ -20,7 +20,7 @@
         {% csrf_token %}
             {{ form.media }}
         {{ form|crispy }}
-        <button class="btn btn-success">Publish Post</button>
+        <button class="btn btn-success">Create Post</button>
     </form>
 </div>
 

@@ -20,6 +20,11 @@ class category(models.Model):
     def __str__(self):
         return self.name
 
+class PublishedManager(models.Manager):
+    def get_queryset(self):
+       '''select only published posts'''
+       return super(PublishedManager, self).get_queryset().filter(status="published")
+
 class post(models.Model):
     post_author = models.ForeignKey(author, on_delete=models.CASCADE)
     post_title = models.CharField(max_length=100)
@@ -27,11 +32,28 @@ class post(models.Model):
     post_body = RichTextUploadingField()
     post_image = models.FileField()
     post_category = models.ForeignKey(category, on_delete=models.CASCADE)
+    views = models.IntegerField(default=0)
     posted_on = models.DateTimeField(auto_now=False, auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True, auto_now_add=False)
+    STATUS_CHOICES = (
+        ('draft', 'Draft'),
+        ('published', 'Published')
+    )
+    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='draft')
+
+    objects = models.Manager()  # the default manager
+
+
+    published_objects = PublishedManager()  # The publish-specific manager.
 
     class Meta:
         ordering = ['-posted_on', ]
 
     def __str__(self):
         return self.post_title
+
+
+
+
+
+

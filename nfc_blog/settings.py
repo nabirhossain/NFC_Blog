@@ -44,9 +44,13 @@ INSTALLED_APPS = [
     'ckeditor_uploader',
     'import_export',
     'crispy_forms',
+    'django.contrib.sites',   #disqus
+    'disqus',
 ]
-
+SITE_ID = 4
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+DISQUS_WEBSITE_SHORTNAME = 'nfc-1'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -143,7 +147,36 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media/')
 
 CKEDITOR_UPLOAD_PATH = 'uploads/'
 
+CKEDITOR_CONFIGS = {
+    'default': {
+        'skin': 'moono',
+        'toolbar_Basic': [
+            ['Source', '-', 'Bold', 'Italic']
+        ],
+        'toolbar_YourCustomToolbarConfig': [
+            {'name': 'clipboard', 'items': ['Cut', 'Copy', 'Paste', 'Undo', 'Redo']},
+            {'name': 'forms',
+             'items': ['Form', 'Checkbox', 'TextField', 'Textarea',]},
+            {'name': 'basicstyles',
+             'items': ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat']},
+            {'name': 'paragraph',
+             'items': ['NumberedList', 'BulletedList', '-', 'Blockquote',
+                       'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock',
+                       ]},
+            {'name': 'insert',
+             'items': ['Image','Table','Iframe']},
+            '/',
+            {'name': 'styles', 'items': ['Styles', 'Format', 'Font', 'FontSize']},
+            {'name': 'colors', 'items': ['TextColor', 'BGColor']},
+            '/',  # put this to force next toolbar on new line
+        ],
+        'toolbar': 'YourCustomToolbarConfig',  # put selected toolbar config here
+    }
+}
+
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 #GMAIL CONFIGRATIONS
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

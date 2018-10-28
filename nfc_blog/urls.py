@@ -14,9 +14,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path,include
+from django.urls import path,include, re_path, reverse_lazy
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib.auth import views as auth_views
 
 app_name='nfc'
 
@@ -25,6 +26,16 @@ urlpatterns = [
     path('',include('nfc.urls', namespace="nfc")),
     path('',include('contact.urls', namespace="contact")),
     path('ckeditor/',include('ckeditor_uploader.urls')),
+    path('login/', auth_views.LoginView.as_view(template_name='login.html'), name = 'user_login'),
+    path('logout/', auth_views.LogoutView.as_view(template_name='logout.html'), name = 'user_logout'),
+    path('change-password/', auth_views.PasswordChangeView.as_view(success_url=reverse_lazy('user_logout')), name='password_change'),
+    path('change-password-done/', auth_views.PasswordChangeDoneView.as_view(), name='password_change_done'),
+
+    path('password_reset/', auth_views.PasswordResetView.as_view(), name='password_reset'),
+    path('password_reset/done/', auth_views.PasswordResetDoneView.as_view(), name='password_reset_done'),
+    re_path('reset/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/',
+            auth_views.PasswordResetConfirmView.as_view(), name='password_reset_confirm'),
+    path('reset/done/', auth_views.PasswordResetCompleteView.as_view(), name='password_reset_complete'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

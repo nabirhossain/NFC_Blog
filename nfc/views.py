@@ -3,7 +3,7 @@ from .models import author,category,post
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
-from django.db.models import Q
+from django.db.models import Q, Count
 from .forms import CreateForm, registerUser, createAuthor, categoryForm
 from django.contrib import messages
 from django.views import View
@@ -23,8 +23,8 @@ from .token import activation_token
 
 # Create your views here.
 def index(request):
-    post1 = post.objects.all().order_by('-posted_on')
-    recent = post.objects.filter().order_by('-posted_on')[0:6]
+    post1 = post.published_objects.all().order_by('-posted_on')
+    recent = post.published_objects.filter().order_by('-posted_on')[0:6]
     cat = category.objects.all()
     search = request.GET.get('q')
     if search:
@@ -58,10 +58,10 @@ def index(request):
 def getAuthor(request, name):
     p_author = get_object_or_404(User, username=name)
     auth = get_object_or_404(author, auth_name=p_author.id)
-    post1 = post.objects.filter(post_author=auth.id)
+    post1 = post.published_objects.filter(post_author=auth.id)
     cat = category.objects.all()
-    recent = post.objects.filter().order_by('-posted_on')[0:6]
-    paginator = Paginator(post1, 2)
+    recent = post.published_objects.filter().order_by('-posted_on')[0:6]
+    paginator = Paginator(post1, 3)
     page = request.GET.get('page')
     try:
         items = paginator.page(page)
@@ -87,9 +87,12 @@ def getAuthor(request, name):
 def PostDetail(request, id):
     post1 = get_object_or_404(post, pk=id)
     cat = category.objects.all()
-    first = post.objects.first()
-    last = post.objects.last()
-    related = post.objects.filter(post_category=post1.post_category).exclude(id=id)[:6]
+    first = post.published_objects.first()
+    last = post.published_objects.last()
+    related = post.published_objects.filter(post_category=post1.post_category).exclude(id=id)[:6]
+    if post1.status == 'published':
+        post1.views += 1  # clock up the number of post views
+        post1.save()
     context ={
         "post1":post1,
         "cat":cat,
@@ -101,9 +104,10 @@ def PostDetail(request, id):
 
 def PostTopic(request, name):
     topic = get_object_or_404(category, name=name)
-    post1 = post.objects.filter(post_category=topic.id)
+    post1 = post.published_objects.filter(post_category=topic.id)
     cat = category.objects.all()
-    recent = post.objects.filter().order_by('-posted_on')[0:6]
+    count = post.published_objects.filter(post_category=topic.id).count()
+    recent = post.published_objects.filter().order_by('-posted_on')[0:6]
     paginator = Paginator(post1, 2)
     page = request.GET.get('page')
     try:
@@ -117,7 +121,7 @@ def PostTopic(request, name):
     start_index = index - 4 if index >= 4 else 0
     end_index = index + 4 if index <= max_index else max_index
     page_range = paginator.page_range[start_index:end_index]
-    return render(request,'category.html', {"post1":post1, "topic":topic, 'cat':cat ,'recent': recent,'items': items, 'page_range': page_range })
+    return render(request,'category.html', {"post1":post1, "topic":topic, 'cat':cat , 'count':count,'recent': recent,'items': items, 'page_range': page_range })
 
 def LogIn(request):
     if request.user.is_authenticated:
@@ -183,7 +187,7 @@ def profile(request):
         author_profile = author.objects.filter(auth_name = user.id)
         if author_profile:
             authorUser = get_object_or_404(author, auth_name = request.user.id)
-            post1 = post.objects.filter(post_author = authorUser.id)
+            post1 = post.published_objects.filter(post_author = authorUser.id)
             return render(request, 'profile.html', {"post1":post1}, {"user":authorUser})
         else:
             form = createAuthor(request.POST or None, request.FILES or None)

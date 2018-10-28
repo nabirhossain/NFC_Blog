@@ -1,4 +1,5 @@
-from django.urls import path
+from django.contrib.auth import views as auth_views
+from django.urls import path, reverse_lazy, re_path
 from . import views
 
 app_name = 'nfc'
@@ -20,6 +21,7 @@ urlpatterns = [
     path('pdf/<int:id>',views.pdf.as_view(), name='pdf'),
     path('about/',views.About, name='about'),
     path('activity/',views.PortFolio, name='activity'),
+    #passward management
 
     #account confirmation url
     path('activate/<uid>/<token>',views.activate, name='activate'),
