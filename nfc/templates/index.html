@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %} welcome to NFC {% endblock %}
+{% block title %} NFC  ব্লগে আপনাকে স্বাগতম {% endblock %}
 
 {% block content %}
 
@@ -62,7 +62,7 @@
                   <ul class="list-unstyled mb-0">
                     {% for c in cat %}
                     <li>
-                      <a href="{% url 'nfc:category' name=c.name %}"> {{ c.name }} <span class="badge badge-secondary">12 posts</span> </a>  <hr>
+                      <a href="{% url 'nfc:category' name=c.name %}"> {{ c.name }} <span class="badge badge-pill badge-link">{{ c.num_post }} posts</span> </a>  <hr>
                     </li>
                     {% endfor %}
                   </ul>

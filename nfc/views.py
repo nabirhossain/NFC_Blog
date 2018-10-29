@@ -25,7 +25,7 @@ from .token import activation_token
 def index(request):
     post1 = post.published_objects.all().order_by('-posted_on')
     recent = post.published_objects.filter().order_by('-posted_on')[0:6]
-    cat = category.objects.all()
+    cat = category.objects.all().annotate(num_post=Count('post'))
     search = request.GET.get('q')
     if search:
         post1 = post1.filter(
@@ -105,8 +105,7 @@ def PostDetail(request, id):
 def PostTopic(request, name):
     topic = get_object_or_404(category, name=name)
     post1 = post.published_objects.filter(post_category=topic.id)
-    cat = category.objects.all()
-    count = post.published_objects.filter(post_category=topic.id).count()
+    cat = category.objects.all().annotate(num_post = Count('post'))
     recent = post.published_objects.filter().order_by('-posted_on')[0:6]
     paginator = Paginator(post1, 2)
     page = request.GET.get('page')
@@ -121,7 +120,7 @@ def PostTopic(request, name):
     start_index = index - 4 if index >= 4 else 0
     end_index = index + 4 if index <= max_index else max_index
     page_range = paginator.page_range[start_index:end_index]
-    return render(request,'category.html', {"post1":post1, "topic":topic, 'cat':cat , 'count':count,'recent': recent,'items': items, 'page_range': page_range })
+    return render(request,'category.html', {"post1":post1, "topic":topic, 'cat':cat , 'recent': recent,'items': items, 'page_range': page_range })
 
 def LogIn(request):
     if request.user.is_authenticated:

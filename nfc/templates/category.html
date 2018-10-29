@@ -45,7 +45,7 @@
                   <ul class="list-unstyled mb-0">
                     {% for c in cat %}
                     <li>
-                      <a href="{% url 'nfc:category' name=c.name %}"> {{ c.name }} <span class="badge badge-secondary">{{ count }} posts</span></a><hr>
+                      <a href="{% url 'nfc:category' name=c.name %}"> {{ c.name }} <span class="badge badge-info">{{ c.num_post }} posts</span></a><hr>
                     </li>
                     {% endfor %}
                   </ul>

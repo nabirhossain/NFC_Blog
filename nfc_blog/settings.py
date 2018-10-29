@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',   #disqus
     'disqus',
 ]
-SITE_ID = 4
+SITE_ID = 5
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 DISQUS_WEBSITE_SHORTNAME = 'nfc-1'
