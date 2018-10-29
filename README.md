@@ -1,5 +1,5 @@
-# NFC_Blog
-Django 2.0 Blog site
+# NFC BLOG
+###Django 2.0 Blog site
 [a link] https://nfcblog.herokuapp.com/
 About
 
