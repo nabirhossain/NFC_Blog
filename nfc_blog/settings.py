@@ -25,8 +25,8 @@ SECRET_KEY = '8v*!l90(h=!@4r)wgx)(zxc+h-@e*-n8l=w5jsy#+7%n09#ei*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-#ALLOWED_HOSTS = ['nfcblog.herokuapp.com']
+#ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['nfcblog.herokuapp.com']
 
 
 # Application definition
