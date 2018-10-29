@@ -7,9 +7,9 @@ This is a demo project for practicing Django. The idea was to build some basic b
 
 It was made using Python 3.6 + Django and database is SQLite. Bootstrap was used for styling. Testing is done using untitest module.
 
-There is a login and registration functionality included.
+There is a login, registration, password change, password reset and disqus comment functionality included.
 
-User has his own blog page, where he can add new blog posts. Every authenticated user can comment on posts made by other users. Home page is paginated list of all posts. Non-authenticated users can see all blog posts, but cannot add new posts or comment.
+User has his own blog page, where he can add new blog posts. Home page is paginated list of all posts. Non-authenticated users can see all blog posts and add comments, but cannot add new posts.
 
 App is covered with tests.
 Prerequisites
@@ -40,10 +40,6 @@ You can run the application from the command line with manage.py. Go to the root
 Run migrations:
 
 $ python manage.py migrate
-
-Initialize data:
-
-$ python manage.py loaddata users posts comments
 
 Run server on port 8000:
 
@@ -77,15 +73,16 @@ $ scripts/run_docker.sh
 
 Post Installation
 
-Go to the web browser and visit http://localhost:8000/home
+Go to the web browser and visit http://localhost:8000
 
-Admin username: admin
+Admin username: 
 
-Admin password: adminpassword
+Admin password: 
 
-User username: dusan
+User username: 
 
-User password: dusanpassword
+User password: 
+
 Helper Tools
 Django Admin
 
