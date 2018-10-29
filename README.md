@@ -15,7 +15,8 @@ There is a
 * password change
 * password reset
 * Django CKeditor
-* disqus comment 
+* disqus comment
+* django export-import
 * django crispy form
 ```
 functionality included.
