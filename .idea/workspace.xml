@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aabad4b-514c-4418-ba3f-0bb8bf43b3df" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfc/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/nfc/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nfc_blog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nfc_blog/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +17,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nfc_blog/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="28">
+              <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -204,7 +198,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.614841" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.614841" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -381,8 +375,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nfc_blog/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="28">
+          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
         </state>
       </provider>
     </entry>

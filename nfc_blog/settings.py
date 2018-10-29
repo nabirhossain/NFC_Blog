@@ -25,8 +25,8 @@ SECRET_KEY = '8v*!l90(h=!@4r)wgx)(zxc+h-@e*-n8l=w5jsy#+7%n09#ei*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-#ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['nfcblog.herokuapp.com']
+ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = ['nfcblog.herokuapp.com']
 
 
 # Application definition
@@ -47,7 +47,9 @@ INSTALLED_APPS = [
     'django.contrib.sites',   #disqus
     'disqus',
 ]
-SITE_ID = 5
+#SITE_ID = 5
+SITE_ID = 6
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 DISQUS_WEBSITE_SHORTNAME = 'nfc-1'
