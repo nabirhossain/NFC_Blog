@@ -45,32 +45,6 @@ Run server on port 8000:
 
 $ python manage.py runserver 8000
 
-Helper script
-
-It is possible to run all of the above with helper script:
-
-$ chmod +x scripts/run.sh
-$ scripts/run.sh
-
-Docker
-
-It is also possible to run the blog app using docker:
-
-Build the Docker image:
-
-$ docker build -t reljicd/django-blog -f docker\Dockerfile .
-
-Run the Docker container:
-
-$ docker run --rm -i -p 8000:8000 reljicd/django-blog
-
-Helper script
-
-It is possible to run all of the above with helper script:
-
-$ chmod +x scripts/run_docker.sh
-$ scripts/run_docker.sh
-
 Post Installation
 
 Go to the web browser and visit http://localhost:8000
@@ -121,15 +95,3 @@ $ .\env\Scripts\activate
 Running tests:
 
 $ python manage.py test blog
-
-Docker
-
-It is also possible to run tests using Docker:
-
-Build the Docker image:
-
-$ docker build -t reljicd/django-blog -f docker\Dockerfile .
-
-Run the Docker container:
-
-$ docker run --rm reljicd/django-blog test blog
