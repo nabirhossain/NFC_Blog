@@ -1,10 +1,8 @@
 # NFC BLOG
 
-##Django 2.0 Blog site
-
 [Demo](https://nfcblog.herokuapp.com)
 
->About
+>About this project
 
 This is a demo project for practicing Django. The idea was to build some basic blogging platform.
 
